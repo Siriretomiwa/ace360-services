@@ -1,0 +1,40 @@
+/* style.css - Luxury Agency Foundation */
+:root {
+    --bg: #050505;
+    --accent: #00e5ff; /* Cyan for tech-luxury */
+    --text-main: #ffffff;
+    --text-dim: #94a3b8;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.serif { font-family: 'Playfair Display', serif; }
+
+/* Subtle Scroll Reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Luxury Card Hover */
+.lux-card {
+    border: 1px solid rgba(255,255,255,0.05);
+    background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0) 100%);
+    transition: border 0.4s ease;
+}
+
+.lux-card:hover {
+    border-color: var(--accent);
+}
