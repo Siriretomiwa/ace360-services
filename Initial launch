@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace360Services | Full-Stack & Mobile Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#050a14] text-gray-100 selection:bg-blue-500">
+    <nav class="p-6 border-b border-white/10 flex justify-between items-center max-w-7xl mx-auto">
+        <div class="text-2xl font-black tracking-tighter text-blue-400">ACE360<span class="text-white">SERVICES</span></div>
+        <a href="mailto:contact@ace360services.com" class="bg-blue-600 px-5 py-2 rounded-full text-sm font-bold hover:bg-blue-700 transition">Contact</a>
+    </nav>
+
+    <header class="max-w-4xl mx-auto text-center pt-24 pb-16 px-6">
+        <span class="text-blue-400 font-bold uppercase tracking-widest text-xs">Digital Agency for the Dutch Market</span>
+        <h1 class="text-5xl md:text-7xl font-black mt-6 mb-8 leading-tight">Digitale groei, <br><span class="text-blue-400">360° geoptimaliseerd.</span></h1>
+        <p class="text-gray-400 text-lg md:text-xl mb-10">Wij helpen Nederlandse ondernemers met AI-gestuurde marketing en high-performance mobiele applicaties.</p>
+        <button class="bg-white text-black font-bold px-10 py-4 rounded-xl hover:scale-105 transition shadow-xl">Plan een Strategiegesprek</button>
+    </header>
+
+    <footer class="text-center py-10 border-t border-white/10 text-gray-500 text-xs uppercase tracking-widest">
+        &copy; 2025 Ace360Services - IreTomiwa Bamgboye
+    </footer>
+</body>
+</html>
