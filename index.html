@@ -3,51 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ace360Services | Bespoke Digital Craftsmanship</title>
+    <title>Ace360Services | Bespoke Web & Mobile Architecture</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&family=Inter:wght@300;600&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; background: #050505; color: #fff; }
-        .serif { font-family: 'Playfair Display', serif; }
-        .lux-gradient { background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0) 100%); }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&family=Inter:wght@200;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="selection:bg-white selection:text-black">
-
-    <nav class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-end mix-blend-difference">
-        <div class="serif text-3xl font-black tracking-tighter">A360.</div>
-        <div class="flex gap-12 text-[10px] uppercase tracking-[0.3em] font-semibold text-slate-300">
-            <a href="/portfolio" class="hover:text-white transition">Portfolio</a>
-            <a href="/services" class="hover:text-white transition">Expertise</a>
-            <a href="mailto:bespoke@ace360.services" class="hover:text-white transition">Contact</a>
+<body>
+    <nav class="fixed top-0 w-full z-50 px-10 py-8 flex justify-between items-center backdrop-blur-md">
+        <a href="/" class="serif text-3xl font-black italic tracking-tighter">A360.</a>
+        <div class="flex gap-12 text-[10px] uppercase tracking-[0.4em] font-semibold text-zinc-400">
+            <a href="services.html" class="hover:text-white transition">Expertise</a>
+            <a href="portfolio.html" class="hover:text-white transition">Works</a>
+            <a href="contact.html" class="hover:text-white transition">Contact</a>
         </div>
     </nav>
 
-    <section class="h-[90vh] flex flex-col justify-center items-center px-6 text-center">
-        <h1 class="serif text-7xl md:text-[140px] leading-[0.85] tracking-tighter mb-12">
-            Digital<br><span class="italic font-light opacity-60">Architecture.</span>
+    <header class="h-screen flex flex-col justify-center px-10 md:px-24">
+        <span class="text-cyan-400 text-xs tracking-[0.5em] uppercase mb-6">Established 2025 • Amsterdam</span>
+        <h1 class="serif text-7xl md:text-[160px] leading-[0.8] tracking-tighter mb-12">
+            Engineering<br><span class="italic font-light opacity-40">Elegance.</span>
         </h1>
-        <p class="text-sm md:text-base uppercase tracking-[0.4em] font-light text-slate-500 max-w-xl">
-            Full-Stack Web & Mobile App Atelier for Discerning Dutch Brands.
+        <p class="text-zinc-500 text-lg max-w-xl font-light leading-relaxed">
+            Ace360Services translates complex business needs into seamless digital experiences. Full-Stack development meets luxury UI/UX.
         </p>
-        <div class="mt-20 animate-bounce opacity-20 text-xs tracking-widest uppercase">Scroll to explore</div>
-    </section>
+    </header>
 
-    <section class="py-32 px-10 grid grid-cols-1 md:grid-cols-2 gap-20 items-center border-t border-white/5">
-        <div>
-            <h2 class="serif text-5xl mb-8">Uncompromising<br>UI/UX Design.</h2>
-            <p class="text-slate-400 leading-loose font-light">
-                We design for touch, speed, and emotion. Every pixel is a calculated decision to ensure your brand feels as premium as the products you sell.
-            </p>
-        </div>
-        <div class="h-96 bg-zinc-900 rounded-sm lux-gradient border border-white/5 flex items-center justify-center text-xs tracking-widest text-zinc-700 italic">
-            [High-Resolution Mockup of App UI]
+    <section class="py-32 px-10 bg-white/[0.01] border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end gap-20">
+            <div class="max-w-xl">
+                <h2 class="serif text-5xl mb-10 text-cyan-400">Beyond Code.</h2>
+                <p class="text-zinc-400 text-xl font-light">We don't just build websites; we architect digital assets. Every line of code is optimized for the HNW consumer journey.</p>
+            </div>
+            <div class="text-[10px] tracking-widest text-zinc-600 uppercase vertical-text hidden md:block">360&deg; STRATEGY</div>
         </div>
     </section>
 
-    <footer class="py-20 border-t border-white/5 text-center text-[10px] uppercase tracking-[0.5em] text-zinc-600">
-        &copy; 2025 ACE360 SERVICES GROUP &bull; NETHERLANDS
+    <footer class="p-20 text-center border-t border-white/5">
+        <p class="text-[10px] tracking-[0.6em] text-zinc-700 uppercase">ACE360 SERVICES GROUP &copy; 2025</p>
     </footer>
 
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.reveal').forEach(el => {
+                if(el.getBoundingClientRect().top < window.innerHeight - 100) el.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
